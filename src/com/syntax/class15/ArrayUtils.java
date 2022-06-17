@@ -17,8 +17,8 @@ public class ArrayUtils {
     }
         public static void main (String[]args){
             ArrayUtils arrUt = new ArrayUtils();
-
-
+                 int arr[]={10,20,30};
+            System.out.println(arrUt.sumArray(arr));
         }
 
     }
