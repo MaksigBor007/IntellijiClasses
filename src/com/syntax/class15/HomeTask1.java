@@ -4,7 +4,7 @@ public class HomeTask1 {
     void max(int a, int b) {
         if (a > b) {
             System.out.println("The large number is " + a);
-
+            
         } else {
             System.out.println("The largest number is " + b);
         }

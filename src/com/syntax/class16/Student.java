@@ -10,7 +10,8 @@ public class Student {
 
     String Name;
     int ID;
-   static int numberOfStudents;
+   static int numberOfStudents; //if we are inside the same class we can access static variables inside static
+    //methods by just writing the name of that variable we don't need to create an object
 
 
 
@@ -19,12 +20,12 @@ public class Student {
          Student s=new Student();
           s.ID=100;
           s.Name="Maks";
-          s.numberOfStudents++;
+          s.numberOfStudents=1;
 
           Student s2=new Student();
           s2.ID=107;
           s2.Name="Vladimir";
-          s2.numberOfStudents++;
+          s2.numberOfStudents=2;
 
           Student s3=new Student();
           s3.ID=180;
