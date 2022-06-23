@@ -7,7 +7,7 @@ public class CountDuplicates2 {
 
     public static void main(String[] args) {
 
-        int[] arr = {20, 20, 40, 50, 30, 30, 30, 30};
+        int[] arr = {10,20,10,30,40,40,50,50};
         counterDuplicates(arr);
 
     }

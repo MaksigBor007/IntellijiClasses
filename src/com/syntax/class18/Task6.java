@@ -12,7 +12,8 @@ public class Task6 {
     boolean b;
     public Task6(String a){
         System.out.println("This constructor is PUBLIC");
-    }private Task6(){
+    }
+    private Task6(){
         System.out.println("This constructor is PRIVATE");
     }
     Task6(int c){
