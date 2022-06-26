@@ -1,6 +1,7 @@
-package com.syntax.class18;
+package com.syntax.interview;
 
-public class InsertSpacesAfterEveryCharacterTask {
+public class InsertSpacesAfterEveryChar {
+
     public static void main(String[] args) {
         String s = "hello";
         StringBuilder sb = new StringBuilder();
@@ -14,3 +15,4 @@ public class InsertSpacesAfterEveryCharacterTask {
 
     }
 }
+

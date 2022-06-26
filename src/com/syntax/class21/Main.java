@@ -1,59 +1,62 @@
 package com.syntax.class21;
 
- class Main {
+class Main {
 
-     String label;
-     double price;
-     String category;
-     boolean hasExpiration;
-     int stock;
+        static class Person{
+            String name;
+            String lastName;
+            int age;
+            Person(String name, String lastName, int age, int salary){
+                this.name=name;
+                this.lastName=lastName;
+                this.age=age;
+            }
+        }
 
-     Main(String label, double price, String category, boolean hasExpiration, int stock) {
-         this.label = label;
-         this.price = price;
-         this.category = category;
-         this.hasExpiration = hasExpiration;
-         this.stock = stock;
-     }
+      static  class Employee extends Person{
+             int salary;
+          Employee(String name, String lastName, int age, int salary) {
+              super(name,lastName,age,salary);
+          }
+          void printInfo(){
+                System.out.println(name+" "+lastName+" "+age+" "+salary);
+            }
+        }
+         static class Student extends Employee{
+                  int grade;
 
-        Main(String label, double price, int stock) {
-         this.label = label;
-         this.price = price;
-            category = "misc";
-            hasExpiration = false;
-            this.stock = stock;
-     }
+            Student(String name,String lastName,int grade,int salary){
+                super(name,lastName,grade,salary);
 
-     Main(String label, double price) {
+            }
+            void printInfo(){
 
-         this.label = label;
-         this.price = price;
-         stock = 0;
-     }
-
- }
-     class StoreProduct  extends Main{
-
-
-         StoreProduct(String label, double price, String category, boolean hasExpiration, int stock) {
-             super(label, price, category, hasExpiration, stock);
-         }
-
-         String methodDisplay() {
-             return label + " " + price + " " + category + " " + hasExpiration + " " + stock;
-         }
+                System.out.println(name+" "+lastName+" "+age+" "+grade);
+            }
+        }
+        static class Retiree extends Student{
+            static String seniorActivity="tour";
 
 
-         public static void main(String[] args) {
-             StoreProduct sp = new StoreProduct("Eggs", 3.0, "Produce", true, 10);
-             System.out.println(sp.methodDisplay());
-             StoreProduct sp2=new StoreProduct("Paper Towel",3.0,"misc",false,24);
-             System.out.println(sp2.methodDisplay());
-             StoreProduct sp3 = new StoreProduct("Paper Towel",2.0,null,false,0);
-             System.out.println(sp3.methodDisplay());
-         }
+            Retiree(String name, String lastName, int age) {
+                super(name,lastName,age, Integer.parseInt(seniorActivity));
 
-     }
 
+
+            }
+
+            void printInfo(){
+                System.out.println(name+" "+lastName+" "+age+" "+seniorActivity);
+            }
+        }
+        public static void main(String[] args){
+            Employee e=new Employee("Joe","Smith",35,35000);
+            e.printInfo();
+            Student student=new Student("Adam","Smith",15,10);
+            student.printInfo();
+            Retiree retiree=new Retiree("Frank","Smith",15);
+            retiree.printInfo();
+        }
+    }
 
 
