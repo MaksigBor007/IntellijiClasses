@@ -20,4 +20,3 @@ Rules:
     it private.
     4) if something is not inherited we can't override it for example private methods and
     constructors.
-    5)
