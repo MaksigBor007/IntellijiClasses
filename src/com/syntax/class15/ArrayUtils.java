@@ -11,7 +11,7 @@ public class ArrayUtils {
     int sumArray(int[] arr) {
         int sum = 0;
         for (int num : arr) {
-            sum = sum + num;
+            sum+= + num;
         }
         return sum;
     }

@@ -37,14 +37,3 @@ class Test{
         MoveAble [] moveAbles={new Car(),new Person()};
     }
 }
-
-
-
-
-
-
-
-
-
-
-
