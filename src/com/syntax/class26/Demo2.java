@@ -13,7 +13,7 @@ public class Demo2 {
         System.out.println(arayList);
         System.out.println(arayList.get(2));  //gets back the elements from the list
 
-        for(int i=0;i<arayList.size();i++){
+        for(int i=0;i<arayList.size();i++){        //retrieve all elements
             System.out.println(arayList.get(i));
         }
     }

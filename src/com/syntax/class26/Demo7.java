@@ -15,7 +15,7 @@ package com.syntax.class26;
             System.out.println(subjects.indexOf("Java")); // returns the index of Java which is 2
             System.out.println(subjects.size()); // tells us the total number of elements in the arraylist
             subjects.remove("Git");
-            System.out.println("subjects = " + subjects); // to printout an array or arrayList just type soutv
+            System.out.println("subjects = " + subjects); // to print out an array or arrayList just type soutv
             System.out.println(subjects.contains("Selenium"));
 
             System.out.println("subjects.get(0) = " + subjects.get(0));

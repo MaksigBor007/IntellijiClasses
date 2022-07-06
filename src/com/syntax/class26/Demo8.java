@@ -31,7 +31,7 @@ public class Demo8 {
 
         ArrayList<String> allSubjects2 = new ArrayList<>();
         allSubjects2.addAll(subjectsSeen);
-        // insert the data starting form the index 1 and will push the existing data towards the end
+        // insert the data starting from the index 1 and will push the existing data towards the end
         allSubjects2.addAll(1, futureSubjects);
 
 

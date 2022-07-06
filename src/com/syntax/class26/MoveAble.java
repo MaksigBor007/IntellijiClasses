@@ -1,5 +1,8 @@
 package com.syntax.class26;
 
+
+
+
 public interface MoveAble {
     void move();
 }
@@ -24,16 +27,9 @@ class Person implements MoveAble{
         System.out.println("Humans can also move");
     }
 }
-class Test{
+class Test {
 
 
     public static void main(String[] args) {
-        MoveAble moveAble=new Car(); // widening
-        moveAble.move();
-        ((Car)(moveAble)).park(); // narrowing
-
-
-        // with interfaces, we can also use polymorphism
-        MoveAble [] moveAbles={new Car(),new Person()};
     }
 }
