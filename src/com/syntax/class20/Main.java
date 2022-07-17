@@ -1,22 +1,31 @@
 package com.syntax.class20;
 
-    class EncapsulationDemo{
-        private String empName="John";
-        private int empAge=30;
+import java.util.Arrays;
 
-        public String getName(){
-            return empName;
-        }
-        public int getAge(){
-            return empAge;
-        }
+class Person {
+    public static void main(String[] args) {
+        int[] num = {10, 20, 30, 40, 50, 50, 40};
+        countDup(num);
     }
-    class Main {
-        public static void main(String[] args) {
-        EncapsulationDemo enc=new EncapsulationDemo();
 
-     System.out.println("Employee Name: "+enc.getName());
-     System.out.println("Employee Age: "+enc.getAge());
+
+    static void countDup(int[]num){
+        int counter=0;
+        int[] num2=new int[num.length];
+        for(int j:num){
+            if(!isPresent(j,num2)){
+                num2[counter++]=j;
+            }
+        }
+        System.out.println(Arrays.toString(num2));
+
+    }
+    static boolean isPresent(int element,int[]num){
+        for(int e:num){
+            if(element==e){
+                return  true;
+            }
+        }
+     return false;
     }
 }
-

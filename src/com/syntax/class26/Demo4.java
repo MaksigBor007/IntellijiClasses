@@ -16,5 +16,6 @@ public class Demo4 {
         System.out.println(names);
         names.remove(2);
         System.out.println(names);
+        
     }
 }
