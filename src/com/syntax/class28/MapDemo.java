@@ -1,6 +1,7 @@
 package com.syntax.class28;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 
 public class MapDemo {
     public static void main(String[] args) {
@@ -14,6 +15,8 @@ public class MapDemo {
         System.out.println(groceries);
         System.out.println(groceries.get("Milk"));
         System.out.println(groceries.get("Fish"));
+
+
     }
 }
 

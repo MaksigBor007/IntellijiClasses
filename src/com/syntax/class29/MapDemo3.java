@@ -15,6 +15,7 @@ public class MapDemo3 {
         Set<String> keys=fruit.keySet(); // all the keys from a map in the form of Set
         for (String key : keys) {
             System.out.println("key = " + key);
+
         }
 
         //All the values in the form of a collection

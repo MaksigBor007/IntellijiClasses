@@ -12,7 +12,7 @@ LinkedHashSet:
     Downside: insertion speed is comparable to HashSet but the retrieval speed is the
     slowest.
 TreeSet:
-    Upside: The Data is stored in the sorted form.
+    Upside: The Data is stored in the  sorted (ascending order)form.
     Downside: Insertion speed is slow. Retrieval speed is better than linkedHashSet
     but slower than Hashset.
 Note:

@@ -17,7 +17,9 @@ public class MapDemo4 {
 
         Set<Map.Entry<String,Double>> entries= fruit.entrySet();
         for(Map.Entry<String,Double> entry:entries){
-            System.out.println("entry = "+entry);
+            String k= entry.getKey();
+            Double v=entry.getValue();
+            System.out.println("entry = "+k+" values = "+v);
         }
     }
 }

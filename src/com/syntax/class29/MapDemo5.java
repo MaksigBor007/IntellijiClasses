@@ -25,7 +25,7 @@ public class MapDemo5 {
         keys.removeIf(key -> key.contains("e"));
 
 /*
-        Iterator<String> iterator= keys.iterator();
+        List<String> iterator= keys.iterator();
         while (iterator.hasNext()){
             if(iterator.next().contains("e")){
                 iterator.remove();
