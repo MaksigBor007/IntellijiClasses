@@ -1,10 +1,7 @@
 package com.syntax.hometasks;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.HashMap;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 
 public class Countries {
@@ -14,7 +11,7 @@ public class Countries {
         //Print all values from a country map using for each loop and iterator.
 
 
-        HashMap<String,String> countries=new HashMap<>();
+        TreeMap<String,String> countries=new TreeMap<>();
 
         countries.put("USA","Washington DC");
         countries.put("Turkey","Ankara");
@@ -29,6 +26,16 @@ public class Countries {
             System.out.println("Key: "+k+" values: "+v);
         }
         System.out.println("----------------------------");
+
+        //Entry object has a method get key to get the key and another method to get the value
+        for(Map.Entry<String,String> entry: countries.entrySet()){
+
+            System.out.println("entry key = " + entry.getKey()+" entry value = " +entry.getValue());
+        }
+
+        //countryCapitalMap.entrySet()=>a set of Entry objects
+        //entrySet().iterator() once we have the set we can get an iterator on that set
+
         Set<Entry<String,String>> entries= countries.entrySet();
         for(Entry<String,String> entry:entries){
             String k=entry.getKey();
@@ -47,6 +54,7 @@ public class Countries {
             String v= it2.next();
             System.out.println("Values: "+v);
         }
+
 
 
 

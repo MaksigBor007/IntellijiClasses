@@ -19,8 +19,8 @@ public class BestBuyStore {
         bestBuy.put(1003,"Dell");
         bestBuy.put(1004,"Staples");
 
-        Set<Map.Entry<Integer,String>> entries=bestBuy.entrySet();
-        for(Map.Entry<Integer,String> entry:entries){
+
+        for(Map.Entry<Integer,String> entry:bestBuy.entrySet()){
             Integer key=entry.getKey();
             String value=entry.getValue();
             System.out.println("Keys: "+key+"  "+"Values: "+value);

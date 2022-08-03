@@ -22,7 +22,13 @@ public class HTLastOne {
            String k= all.next();
             System.out.println(k);
         }
+        System.out.println("----------------");
 
+        StringBuilder allValues=new StringBuilder();//save more memory and much faster to use StringBuilder
+        for(String v:collection){
+            allValues.append(v);
+
+        }System.out.print(allValues);
 
 
 

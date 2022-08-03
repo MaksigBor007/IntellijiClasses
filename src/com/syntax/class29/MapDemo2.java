@@ -14,8 +14,7 @@ public class MapDemo2 {
         fruit.put("Strawberry",100);
 
 
-
-        HashMap<String,Integer> cosmetics=new HashMap<>();
+     HashMap<String,Integer> cosmetics=new HashMap<>();
         cosmetics.put("foundation",20);
         cosmetics.put("lipstick",25);
         cosmetics.put("mascara",20);

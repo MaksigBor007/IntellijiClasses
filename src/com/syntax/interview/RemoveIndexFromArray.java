@@ -6,12 +6,12 @@ public class RemoveIndexFromArray {
     public static void main(String[] args) {
         int[] myArray = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
 
-        int removeInd = 0;
+//output is _ 14 56 15 36 56 77 18 _ _
+        for (int i = 1; i < myArray.length - 2; i++) {
+            myArray[i] = myArray[i];
 
-        for (int i = removeInd; i < myArray.length - 1; i++) {
-            myArray[i]=myArray[i+1];
+            System.out.print(myArray[i] + " ");
 
-            System.out.println(Arrays.toString(myArray));
 
         }
     }

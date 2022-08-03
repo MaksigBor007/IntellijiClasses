@@ -40,4 +40,26 @@ Choose proper DataStructure.
     Q2: I want to store the names of the students and most of the time i will be
     performing operation related to data retrieval based on index.
     ArrayList
+    HashTable:
+    Its old and slow but provides thread safaty
+    Important notes:
+    We can use three method to get a data from the map
+    1)EntrySet:key,value store inside an object of type Map.Entry
+    we can use getKey method on this object
+    to get key of that entry and getValue() method to get the value of that entry.
+    2)KeySet():it will return all the Keys from a map in the form of set.
+    3)value():it will return all the values from a map in the form of collection.
+
+    ==========================================================================================
+    FileHandling in JAVA:
+    We need to have below three things in order to read/write a file Manually.
+    1) Path of the file that we want to read/write
+    2) We need to navigate to that file
+    3) We need to have software installed  on your PC to interact with that file.
+
+    We need to have below three things in order to read/write a file Manually.
+    1) Path of a file we can store inside a String
+    2) We can use the FileInputStream/FileOututStream class to navigate to that forlder
+    3) We can use specific java file
+
 

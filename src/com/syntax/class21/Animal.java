@@ -22,13 +22,15 @@ public class Animal {
 }
 class Dog extends Animal {
     public Dog(String name, String color, String breed, int age) {
+
         super(name, color, breed, age);
     }
-
+}
     class Cat extends Animal {
 
-        public Cat(String name, String color, String breed, int age) {
+         public  Cat(String name, String color, String breed, int age) {
+
             super(name, color, breed, age);
         }
     }
-    }
+

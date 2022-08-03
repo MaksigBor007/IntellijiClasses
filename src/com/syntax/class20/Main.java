@@ -2,7 +2,7 @@ package com.syntax.class20;
 
 import java.util.Arrays;
 
-class Person {
+class Main {
     public static void main(String[] args) {
         int[] num = {10, 20, 30, 40, 50, 50, 40};
         countDup(num);

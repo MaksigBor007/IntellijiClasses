@@ -25,10 +25,15 @@ public class Person {
         this.salary = salary;
     }
 
-    void userDetails() {
-        System.out.println(name + " "+lastName + " Age: "+age +" Salary: " +salary);
+    @Override            //use toString method instead of void PrintAll
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
     }
-
 }
  class Test extends Person{
      Test(String name, String lastName, int age, int salary) {
@@ -38,32 +43,18 @@ public class Person {
      /**
       *
       */
-     @Override
-     void userDetails() {
-         super.userDetails();
-     }
+
 
      public static void main(String[] args) {
 
-         Test person1=new Test("Maksym","Borodai",33,50000);
-         Test person2=new Test("Oleg","Servylya",35,20000);
-         Test person3=new Test("Slava","Dydka",61,99000);
-         Test person4=new Test("Lena","LuPaZa",22,150000);
-
-
-
          TreeMap<Integer, Test> personalID = new TreeMap<>();
-         personalID.put(44444, person1);
-         personalID.put(11111,person2);
-         personalID.put(22222,person3);
-         personalID.put(33333,person4);
+         personalID.put(44444, new Test("Maksym","Borodai",33,50000));
+         personalID.put(11111,new Test("Petya","Lupkin",45,60000));
+         personalID.put(22222,new Test("Lena","LuPaZa",22,99000));
+         personalID.put(33333,new Test("Kirill","Borodai",30,49000));
 
-         Iterator<Entry<Integer, Test>> it = personalID.entrySet().iterator();
-         while(it.hasNext()){
-             Entry<Integer,Test> pair= it.next();
-
-             System.out.println("Personal ID: "+pair.getKey());
-             pair.getValue().userDetails();
+         for (Person p: personalID.values()) {
+             System.out.println(p);
          }
 
 
